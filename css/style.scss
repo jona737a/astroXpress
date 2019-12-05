@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,400,600|Tomorrow:600&display=swap');
+
+$colors:(
+    primary: #0C2B3D,
+    secondary:#24435E,
+    button: #376892,
+    ltext: #F2F2F2,
+    dtext: #323337,
+    trans: #385D7D80,
+);
+
+h1{
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 80px;
+    color: map-get($colors , ltext );
+}
+
+h2{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: map-get($colors , ltext );
+    font-size: 38px;
+}
+
+p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: map-get($colors , ltext );
+    font-size: 24px;
+}
+
+.quote{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: map-get($colors , ltext );
+    font-size: 24px;
+}
+
+body{
+    background-color: map-get($colors , primary );
+}
+

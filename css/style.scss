@@ -62,9 +62,9 @@ main{
 #rocket{
     width: 100px;
     height: 200px;
-    background-color: map-get($map: $colors, $key: ltext);
     position: fixed;
     transform: translateY(500px);
+    z-index: 1;
 }
 
 #box1_container{
@@ -81,6 +81,8 @@ main{
     height: 9%;
     width: 56%;
     background-color: map-get($map: $colors, $key: trans);
+    position: relative;
+    z-index: 2;
 }
 
 .box1:nth-child(odd){

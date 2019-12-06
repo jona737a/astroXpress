@@ -47,7 +47,7 @@ main{
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    height: 6000px;
+    height: 5900px;
 }
 
 #earth{
@@ -59,9 +59,17 @@ main{
     margin-top: -800px;
 }
 
+#rocket{
+    width: 100px;
+    height: 200px;
+    background-color: map-get($map: $colors, $key: ltext);
+    position: fixed;
+    transform: translateY(500px);
+}
+
 #box1_container{
     width: 100%;
-    height: 4740px;
+    height: 4940px;
     
     display: flex;
     display: flex;
@@ -70,7 +78,7 @@ main{
 }
 
 .box1{
-    height: 11%;
+    height: 9%;
     width: 56%;
     background-color: map-get($map: $colors, $key: trans);
 }

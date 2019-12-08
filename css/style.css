@@ -41,12 +41,11 @@ main {
 }
 
 #earth {
-  width: 80%;
-  height: 1300px;
-  background-color: #F2F2F2;
+  width: 100%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  margin-top: -800px;
+  margin-top: -145vh;
+  transform: rotate(180deg);
 }
 
 #rocket {

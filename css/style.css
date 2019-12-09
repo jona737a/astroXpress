@@ -28,7 +28,9 @@ p {
 }
 
 body {
-  background-color: #0C2B3D;
+  background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0;
 }
 
@@ -71,6 +73,22 @@ main {
   background-color: #385D7D80;
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.box1 img {
+  width: 400px;
+  height: 400px;
+  align-self: center;
+}
+
+.box1 p {
+  width: 45%;
+  height: 90%;
+  margin: 0;
 }
 
 .box1:nth-child(odd) {

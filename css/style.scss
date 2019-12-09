@@ -38,7 +38,9 @@ p{
 }
 
 body{
-    background-color: map-get($colors , primary );
+    background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0;
 }
 
@@ -69,7 +71,6 @@ main{
 #box1_container{
     width: 100%;
     height: 4940px;
-    
     display: flex;
     display: flex;
     flex-flow: column;
@@ -82,7 +83,24 @@ main{
     background-color: map-get($map: $colors, $key: trans);
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
 }
+
+.box1 img{
+    width: 400px;
+    height: 400px;
+    align-self: center;
+}
+
+.box1 p{
+    width: 45%;
+    height: 90%;
+    margin: 0;
+}
+
 
 .box1:nth-child(odd){
     align-self: flex-end;

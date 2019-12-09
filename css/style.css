@@ -3,6 +3,7 @@ h1 {
   font-family: "Tomorrow", sans-serif;
   font-size: 80px;
   color: #F2F2F2;
+  margin: 0;
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
   font-weight: 600;
   color: #F2F2F2;
   font-size: 38px;
+  margin: 0;
 }
 
 p {
@@ -17,6 +19,8 @@ p {
   font-weight: 300;
   color: #F2F2F2;
   font-size: 24px;
+  margin: 0;
+  line-height: 34px;
 }
 
 .quote {
@@ -25,11 +29,12 @@ p {
   font-style: italic;
   color: #F2F2F2;
   font-size: 24px;
+  margin: 0;
 }
 
 body {
   background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -54,7 +59,7 @@ main {
   width: 100px;
   height: 200px;
   position: fixed;
-  transform: translateY(500px);
+  transform: translateY(515px);
   z-index: 1;
 }
 
@@ -65,18 +70,18 @@ main {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  margin-top: 900px;
 }
 
 .box1 {
   height: 9%;
   width: 56%;
-  background-color: #385D7D80;
+  background-color: #24435e80;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
   display: flex;
-  padding: 30px;
-  justify-content: space-between;
+  padding: 25px;
 }
 
 .box1 img {
@@ -85,14 +90,41 @@ main {
   align-self: center;
 }
 
-.box1 p {
-  width: 45%;
-  height: 90%;
-  margin: 0;
-}
-
 .box1:nth-child(odd) {
   align-self: flex-end;
+}
+
+.box1:nth-child(1) {
+  justify-content: space-between;
+}
+.box1:nth-child(1) p {
+  width: 400px;
+  height: 400px;
+}
+
+.box1:nth-child(2) {
+  flex-flow: column;
+}
+.box1:nth-child(2) h2 {
+  margin-top: 10px;
+}
+.box1:nth-child(2) p {
+  width: auto;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: top center;
+  }
+
+  p {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

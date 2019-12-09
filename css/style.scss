@@ -6,13 +6,14 @@ $colors:(
     button: #376892,
     ltext: #F2F2F2,
     dtext: #323337,
-    trans: #385D7D80,
+    trans: #24435e80,
 );
 
 h1{
     font-family: 'Tomorrow', sans-serif;
     font-size: 80px;
     color: map-get($colors , ltext );
+    margin: 0;
 }
 
 h2{
@@ -20,6 +21,7 @@ h2{
     font-weight: 600;
     color: map-get($colors , ltext );
     font-size: 38px;
+    margin: 0;
 }
 
 p{
@@ -27,6 +29,8 @@ p{
     font-weight: 300;
     color: map-get($colors , ltext );
     font-size: 24px;
+    margin: 0;
+    line-height: 34px;
 }
 
 .quote{
@@ -35,12 +39,14 @@ p{
     font-style: italic;
     color: map-get($colors , ltext );
     font-size: 24px;
+    margin: 0;
 }
 
 body{
     background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    
     margin: 0;
 }
 
@@ -64,7 +70,7 @@ main{
     width: 100px;
     height: 200px;
     position: fixed;
-    transform: translateY(500px);
+    transform: translateY(515px);
     z-index: 1;
 }
 
@@ -75,6 +81,7 @@ main{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    margin-top: 900px;
 }
 
 .box1{
@@ -85,8 +92,7 @@ main{
     z-index: 2;
     box-sizing: border-box;
     display: flex;
-    padding: 30px;
-    justify-content: space-between;
+    padding: 25px;
 }
 
 .box1 img{
@@ -95,13 +101,41 @@ main{
     align-self: center;
 }
 
-.box1 p{
-    width: 45%;
-    height: 90%;
-    margin: 0;
-}
 
 
 .box1:nth-child(odd){
     align-self: flex-end;
+}
+
+.box1:nth-child(1){
+    p{
+        width: 400px;
+        height: 400px;
+    }
+    justify-content: space-between;
+}
+
+.box1:nth-child(2){
+    h2{
+            margin-top: 10px;
+    }
+    p{
+        width: auto;
+        margin-top: 30px;
+    }
+    flex-flow: column;
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;  
+        background-position: top center;
+    }
+    p{
+        font-size: 11px;
+    }
 }

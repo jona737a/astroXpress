@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,400,600|Tomorrow:600&display=swap');
 
+//Map For All Of Our Colors
+
 $colors:(
     primary: #0C2B3D,
     secondary:#24435E,
@@ -8,6 +10,8 @@ $colors:(
     dtext: #323337,
     trans: #24435e80,
 );
+
+// Text Presets + Body
 
 h1{
     font-family: 'Tomorrow', sans-serif;
@@ -51,6 +55,8 @@ body{
     
     margin: 0;
 }
+
+//Header Start
 
 header{
     .info{
@@ -105,16 +111,17 @@ header{
     width: 450px;
     position: fixed;
     z-index: 5;
-    transform: translateY(40px);
+    transform: translate(-225px, 40px);
 }
 
 main{
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
     height: 5900px;
 }
+
+// Content Front Page Start
 
 #earth{
     width: 100%;
@@ -140,70 +147,80 @@ main{
     flex-flow: column;
     justify-content: space-between;
     margin-top: 1000px;
-}
 
-.box1{
-    height: 9%;
-    width: 56%;
-    background-color: map-get($map: $colors, $key: trans);
-    position: relative;
-    z-index: 2;
-    box-sizing: border-box;
-    display: flex;
-    padding: 40px;
-}
-
-
-
-.box1:nth-child(odd){
-    align-self: flex-end;
-}
-
-.box1:nth-child(1){
-    p{
-        width: 480px;
-        height: 400px;
-      
-    }
-    img{
-        height: 360px;
-    }
-    justify-content: space-around;
-    
-}
-
-.box1:nth-child(2),.box1:nth-child(3),.box1:nth-child(4),.box1:nth-child(5){
-    p{
-        width: 90%;
-        height: 50px;
-        padding: 0 20px;
+    .box1{
+        height: 9%;
+        width: 56%;
+        background-color: map-get($map: $colors, $key: trans);
+        position: relative;
+        z-index: 2;
         box-sizing: border-box;
-        font-size: 36px;
-        text-align: center;
+        display: flex;
+        padding: 40px;
     }
-    .quote{
-        margin: 0;
-        height: 250px;
-        font-size: 54px;
+    
+    .box1:nth-child(odd){
+        align-self: flex-end;
     }
-    justify-content: space-around;
-    flex-flow: column;
-    box-sizing: border-box;
-    align-items: center;
+
+    .box1:nth-child(1){
+        p{
+            width: 480px;
+            height: 400px;
+          
+        }
+        img{
+            height: 360px;
+        }
+        justify-content: space-around;
+        
+    }
+    
+    .box1:nth-child(2),.box1:nth-child(3),.box1:nth-child(4),.box1:nth-child(5){
+        p{
+            width: 90%;
+            height: 50px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 36px;
+            text-align: center;
+        }
+        .quote{
+            margin: 0;
+            height: 250px;
+            font-size: 54px;
+        }
+        justify-content: space-around;
+        flex-flow: column;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .box1:nth-child(6){
+        p{
+            width: 500px;
+            height: 400px;
+        }
+        img{
+            height: 360px;
+        }
+        justify-content: space-between;
+        padding: 40px;
+    }
+}
+
+// Info Page Content Start
+
+#box2_container{
+    height: 7000px;
 }
 
 
-.box1:nth-child(6){
-    p{
-        width: 500px;
-        height: 400px;
-    }
-    img{
-        height: 360px;
-    }
-    justify-content: space-between;
-    padding: 40px;
-}
+
+
+
+
+// Footer Start 
 
 footer{
     margin-top: 200px;

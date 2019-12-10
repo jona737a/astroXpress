@@ -87,14 +87,13 @@ header a:hover h2 {
   width: 450px;
   position: fixed;
   z-index: 5;
-  transform: translateY(40px);
+  transform: translate(-225px, 40px);
 }
 
 main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-between;
   height: 5900px;
 }
 
@@ -123,8 +122,7 @@ main {
   justify-content: space-between;
   margin-top: 1000px;
 }
-
-.box1 {
+#box1_container .box1 {
   height: 9%;
   width: 56%;
   background-color: #24435e80;
@@ -134,29 +132,26 @@ main {
   display: flex;
   padding: 40px;
 }
-
-.box1:nth-child(odd) {
+#box1_container .box1:nth-child(odd) {
   align-self: flex-end;
 }
-
-.box1:nth-child(1) {
+#box1_container .box1:nth-child(1) {
   justify-content: space-around;
 }
-.box1:nth-child(1) p {
+#box1_container .box1:nth-child(1) p {
   width: 480px;
   height: 400px;
 }
-.box1:nth-child(1) img {
+#box1_container .box1:nth-child(1) img {
   height: 360px;
 }
-
-.box1:nth-child(2), .box1:nth-child(3), .box1:nth-child(4), .box1:nth-child(5) {
+#box1_container .box1:nth-child(2), #box1_container .box1:nth-child(3), #box1_container .box1:nth-child(4), #box1_container .box1:nth-child(5) {
   justify-content: space-around;
   flex-flow: column;
   box-sizing: border-box;
   align-items: center;
 }
-.box1:nth-child(2) p, .box1:nth-child(3) p, .box1:nth-child(4) p, .box1:nth-child(5) p {
+#box1_container .box1:nth-child(2) p, #box1_container .box1:nth-child(3) p, #box1_container .box1:nth-child(4) p, #box1_container .box1:nth-child(5) p {
   width: 90%;
   height: 50px;
   padding: 0 20px;
@@ -164,22 +159,25 @@ main {
   font-size: 36px;
   text-align: center;
 }
-.box1:nth-child(2) .quote, .box1:nth-child(3) .quote, .box1:nth-child(4) .quote, .box1:nth-child(5) .quote {
+#box1_container .box1:nth-child(2) .quote, #box1_container .box1:nth-child(3) .quote, #box1_container .box1:nth-child(4) .quote, #box1_container .box1:nth-child(5) .quote {
   margin: 0;
   height: 250px;
   font-size: 54px;
 }
-
-.box1:nth-child(6) {
+#box1_container .box1:nth-child(6) {
   justify-content: space-between;
   padding: 40px;
 }
-.box1:nth-child(6) p {
+#box1_container .box1:nth-child(6) p {
   width: 500px;
   height: 400px;
 }
-.box1:nth-child(6) img {
+#box1_container .box1:nth-child(6) img {
   height: 360px;
+}
+
+#box2_container {
+  height: 7000px;
 }
 
 footer {

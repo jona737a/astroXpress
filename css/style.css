@@ -94,7 +94,6 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 5900px;
 }
 
 #earth {
@@ -176,8 +175,128 @@ main {
   height: 360px;
 }
 
+#SpaceShuttle {
+  position: absolute;
+  top: 1300px;
+  height: 1700px;
+}
+
+#SpaceSuit {
+  position: absolute;
+  top: 3900px;
+  height: 1700px;
+}
+
 #box2_container {
-  height: 7000px;
+  height: 5000px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 500px;
+}
+#box2_container .box2 {
+  height: 7%;
+  width: 56%;
+  background-color: #24435e80;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  padding: 40px;
+  flex-flow: column;
+}
+#box2_container .box2 h2 {
+  margin-bottom: 20px;
+}
+#box2_container .box2:nth-child(even) {
+  align-self: flex-end;
+}
+#box2_container .box2:nth-child(2), #box2_container .box2:nth-child(3), #box2_container .box2:nth-child(4), #box2_container .box2:nth-child(6), #box2_container .box2:nth-child(7), #box2_container .box2:nth-child(8) {
+  width: 40%;
+  height: 8%;
+  padding-top: 35px;
+}
+
+#box3_container {
+  height: 3700px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 500px;
+}
+#box3_container .box3 {
+  height: 9%;
+  width: 56%;
+  background-color: #24435e80;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+}
+#box3_container .box3 .text {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+#box3_container .box3 .text h2 {
+  margin-bottom: 20px;
+}
+#box3_container .box3:nth-child(even) {
+  align-self: flex-end;
+}
+#box3_container .box3:nth-child(1) img {
+  width: 280px;
+  height: 277.8px;
+  align-self: center;
+}
+#box3_container .box3:nth-child(2) img {
+  width: 174.3px;
+  height: 280px;
+  align-self: center;
+}
+#box3_container .box3:nth-child(3) img {
+  width: 280px;
+  height: 280px;
+  align-self: center;
+}
+#box3_container .box3:nth-child(4) img {
+  width: 280px;
+  height: 201.7px;
+  align-self: center;
+}
+#box3_container .box3:nth-child(5) img {
+  width: 280px;
+  height: 248px;
+  align-self: center;
+}
+#box3_container .box3:nth-child(6) img {
+  width: 280px;
+  height: 192px;
+  align-self: center;
+}
+#box3_container #Newsletter {
+  width: 80%;
+  height: 30px;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  color: #323337;
+  font-size: 24px;
+  padding-left: 10px;
+  align-self: center;
+}
+#box3_container #submit {
+  width: 150px;
+  background-color: #F2F2F2;
+  align-self: center;
+  margin-top: 20px;
+}
+#box3_container #submit p {
+  color: #323337;
 }
 
 footer {

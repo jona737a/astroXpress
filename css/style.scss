@@ -304,25 +304,46 @@ main{
         align-self: center;
     }
 
-    .box3:nth-child(3) img{
-        width: 280px;
-        height: 280px;
-        align-self: center;
+    .box3:nth-child(3){
+        img{
+            width: 280px;
+            height: 280px;
+            align-self: center;
+        }
         p{
-            font-size: 38px;
+            margin-top: 20px;
+            font-size: 32px;
+            text-align: center;
+            font-style: italic;
         }
     }
 
-    .box3:nth-child(4) img{
-        width: 280px;
-        height: 201.7px;
-        align-self: center;
+    .box3:nth-child(4) {
+        img{
+            width: 280px;
+            height: 201.7px;
+            align-self: center;
+        }
+        p{
+            margin-top: 50px;
+            font-size: 32px;
+            text-align: center;
+            font-style: italic;
+        }
     }
 
-    .box3:nth-child(5) img{
+    .box3:nth-child(5) {
+        img{
         width: 280px;
         height: 248px;
         align-self: center;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 32px;
+            text-align: center;
+            font-style: italic;
+        }
     }
 
     .box3:nth-child(6) img{
@@ -348,7 +369,9 @@ main{
         background-color: map-get($map: $colors, $key: ltext);
         align-self: center;
         margin-top: 20px;
+        border: none;
         p{
+            font-weight: 400;
             color: map-get($map: $colors, $key: dtext);
         }
     }
@@ -485,6 +508,8 @@ footer{
         
     }
 
+// front page
+
     #rocket{
         transform: translateY(300px);
     }
@@ -496,7 +521,6 @@ footer{
             height: 12%;
             width: 100%;
             flex-flow: column;
-            padding: 40px;
             justify-content: space-between;
             align-items: center;
         }
@@ -542,6 +566,68 @@ footer{
             
         }
     }
+
+// info page
+
+    #SpaceShuttle{
+        position: absolute;
+        top: 1400px;
+        height: 1100px;
+        opacity: 30%;
+    }
+    
+    #SpaceSuit{
+        position: absolute;
+        top: 4100px;
+        height: 1100px;
+        opacity: 30%;
+    }
+    
+    #box2_container{
+        padding-top: 350px;
+        .box2{
+            height: 8%;
+            width: 100%;
+            p{
+                font-size: 15px;
+            }
+        }
+        .box2:nth-child(2),.box2:nth-child(3),.box2:nth-child(4),.box2:nth-child(6),.box2:nth-child(7),.box2:nth-child(8){
+            width: 100%;
+        }
+    }
+
+
+    #box3_container{
+        padding-top: 400px;
+        height: 5300px;
+        .box3{
+            width: 100%;
+            height: 13%;
+            flex-flow: column;
+            .text{
+                width: 100%;
+                height: 40%;
+                margin: 0;
+                h2{
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .box3:nth-child(3), .box3:nth-child(4), .box3:nth-child(5){
+            p{
+                margin-top: 30px;
+                font-size: 32px;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+
+
     footer{
         margin-top: 200px;
         width: 100%;

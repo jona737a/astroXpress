@@ -500,11 +500,12 @@ footer a h2 {
     padding-top: 350px;
   }
   #box2_container .box2 {
-    height: 8%;
+    height: fit-content;
     width: 100%;
   }
   #box2_container .box2 p {
     font-size: 15px;
+    height: fit-content;
   }
   #box2_container .box2:nth-child(2), #box2_container .box2:nth-child(3), #box2_container .box2:nth-child(4), #box2_container .box2:nth-child(6), #box2_container .box2:nth-child(7), #box2_container .box2:nth-child(8) {
     width: 100%;
@@ -561,8 +562,9 @@ footer a h2 {
     padding: 20px;
     box-sizing: border-box;
   }
-  footer #logobox img {
-    width: 60%;
+  footer #logobox a {
+    width: 100%;
+    height: 400px;
   }
   footer #navbox {
     width: 100%;

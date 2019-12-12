@@ -8,13 +8,13 @@ $win.on('scroll', function() {
     var wave = Math.sin(0.0034*top);
     var rotate = Math.sin(0.0034*top+40);
     if(width < 600){
-        if (top == 0) {
+        if (top <= 0) {
             $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 300px ) rotate(' + 0 + 'deg)');
         }else{
             $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 300px) rotate(' + 40*rotate + 'deg)');
         }
     }else{
-        if (top == 0) {
+        if (top <= 0) {
             $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 550px ) rotate(' + 0 + 'deg)');
         }else{
             $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 550px) rotate(' + 40*rotate + 'deg)');

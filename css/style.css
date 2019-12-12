@@ -200,7 +200,6 @@ main {
   background-color: #24435e80;
   position: relative;
   z-index: 2;
-  box-sizing: border-box;
   display: flex;
   padding: 40px;
   flex-flow: column;
@@ -367,6 +366,13 @@ footer #topnav {
   justify-content: space-evenly;
   border-bottom: 3px #f2f2f2 solid;
 }
+footer #topnav a {
+  text-decoration: none;
+}
+footer #topnav a h2 {
+  font-weight: 300;
+  font-size: 38px;
+}
 footer #bottomnav {
   width: 90%;
   height: 50%;
@@ -377,13 +383,6 @@ footer #bottomnav {
 footer .fab {
   font-size: 80px;
   color: #F2F2F2;
-}
-footer a {
-  text-decoration: none;
-}
-footer a h2 {
-  font-weight: 300;
-  font-size: 52px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -580,6 +579,7 @@ footer a h2 {
     flex-flow: column;
     justify-content: space-evenly;
     border-bottom: 3px #f2f2f2 solid;
+    display: none;
   }
   footer #bottomnav {
     width: 90%;

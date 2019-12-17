@@ -9,15 +9,15 @@ $win.on('scroll', function() {
     var rotate = Math.sin(0.0034*top+40);
     if(width < 600){
         if (top <= 0) {
-            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 300px ) rotate(' + 0 + 'deg)');
+            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 380px ) rotate(' + 0 + 'deg)');
         }else{
-            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 300px) rotate(' + 40*rotate + 'deg)');
+            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 380px) rotate(' + 40*rotate + 'deg)');
         }
     }else{
         if (top <= 0) {
-            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 550px ) rotate(' + 0 + 'deg)');
+            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 650px ) rotate(' + 0 + 'deg)');
         }else{
-            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 550px) rotate(' + 40*rotate + 'deg)');
+            $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 650px) rotate(' + 40*rotate + 'deg)');
         }
     }
     
@@ -30,6 +30,7 @@ var lastScrollTop = 0;
 var navbarHeight = $('header').outerHeight();
 var $info = $('.info');
 var $about = $('.about');
+var $header = $('header');
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -47,14 +48,17 @@ function hasScrolled() {
 
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('.about').removeClass('about-down').addClass('about-up');
-        $('.info').removeClass('info-down').addClass('info-up');
+        $about.addClass('about-up');
+        $info.addClass('info-up');
+        $header.addClass('header-up')
+
         
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('.about').removeClass('about-up').addClass('about-down');
-            $('.info').removeClass('info-up').addClass('info-down');
+            $about.removeClass('about-up');
+            $info.removeClass('info-up');
+            $header.removeClass('header-up')
             
     }
     }

@@ -8,7 +8,7 @@ $colors:(
     button: #376892,
     ltext: #F2F2F2,
     dtext: #323337,
-    trans: #24435e80,
+    trans: #0c2b3dd5,
 );
 
 // Text Presets + Body
@@ -52,19 +52,31 @@ body{
     background-image: url("../Assets/jpg/1st_Semester_Projekt_baggrund.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+    display: flex;
+    flex-flow: column;
     margin: 0;
 }
 
 //Header Start
 
 header{
+    align-self: center;
+    width: 80%;
+    height: 180px;
+    display: flex;justify-content: center;
+    background-color: #000000a7;
+    position: fixed;
+    z-index: 9;
+    transition: 0.6s ease-in-out;
+
+    
     .info{
         position:fixed;
         transform: translate(-360px, 73px);
         z-index: 8;
         text-decoration: none;
         transition: 0.6s ease-in-out;
+        
         
         h2{
             font-size: 38px;
@@ -95,17 +107,13 @@ header{
         transform: translate(300px, -50px);
         opacity: 0%;
     }
-    a:hover{
-        h2{
-            font-size: 38px;
-        }
-    }
-
-    width: 100%;
-    height: 100px;
-    display: flex;justify-content: center;
+    
 }
 
+.header-up{
+    transform: translateY(-200px);
+    opacity: 50%;
+}
 
 #logo{
     width: 450px;
@@ -130,7 +138,7 @@ main{
     width: 100px;
     height: 200px;
     position: fixed;
-    transform: translateY(550px);
+    transform: translateY(650px);
     z-index: 1;
 }
 
@@ -236,7 +244,6 @@ main{
         background-color: map-get($map: $colors, $key: trans);
         position: relative;
         z-index: 2;
-        
         display: flex;
         padding: 40px;
         flex-flow: column;
@@ -298,13 +305,13 @@ main{
         align-self: center;
     }
 
-    .box3:nth-child(2) img{
+    .box3:nth-child(3) img{
         width: 174.3px;
         height: 280px;
         align-self: center;
     }
 
-    .box3:nth-child(3){
+    .box3:nth-child(4){
         img{
             width: 280px;
             height: 280px;
@@ -318,7 +325,7 @@ main{
         }
     }
 
-    .box3:nth-child(4) {
+    .box3:nth-child(5) {
         img{
             width: 280px;
             height: 201.7px;
@@ -332,7 +339,7 @@ main{
         }
     }
 
-    .box3:nth-child(5) {
+    .box3:nth-child(6) {
         img{
         width: 280px;
         height: 248px;
@@ -346,7 +353,7 @@ main{
         }
     }
 
-    .box3:nth-child(6) img{
+    .box3:nth-child(2) img{
         width: 280px;
         height: 192px;
         align-self: center;
@@ -437,6 +444,23 @@ footer{
             }
         }
     }
+    
+    #nav{
+        height: 70%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        border-right: 3px solid #f2f2f2;
+        width: 30%;
+    }
+
+    #contact{
+        height: 80%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
 
     #bottomnav{
         width: 90%;
@@ -466,6 +490,7 @@ footer{
         background-position: top center;
         background-position-y: -300px;
         background-size: 2000px;
+
     }
 
     p{
@@ -477,9 +502,12 @@ footer{
     }
 
     header{
-        width: 100%;
-        height: 80px;
-        display: flex;justify-content: center;
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        
 
         #logo{
             width: 225px;
@@ -516,10 +544,14 @@ footer{
         
     }
 
+    .header-up{
+        transform: translateY(-400px);
+    }
+
 // front page
 
     #rocket{
-        transform: translateY(300px);
+        transform: translateY(380px);
     }
 
     #box1_container{
@@ -580,27 +612,40 @@ footer{
     #SpaceShuttle{
         position: absolute;
         top: 1400px;
-        height: 1100px;
-        opacity: 30%;
+        width: 90%;
+        height: auto;
     }
     
     #SpaceSuit{
         position: absolute;
-        top: 4100px;
-        height: 1100px;
-        opacity: 30%;
+        top: 3900px;
+        height: auto;
+        width: 90%;
     }
     
     #box2_container{
         padding-top: 350px;
+        width: 100%;
         .box2{
             height: fit-content;
             width: 100%;
+            padding: 40px 0;
             p{
                 font-size: 15px;
+                width: 100%;
                 height: fit-content;
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+            h2{
+                padding-left: 40px;
             }
         }
+
+        .box2:nth-child(even){
+            align-self: flex-start;
+        }
+
         .box2:nth-child(2),.box2:nth-child(3),.box2:nth-child(4),.box2:nth-child(6),.box2:nth-child(7),.box2:nth-child(8){
             width: 100%;
         }
@@ -683,9 +728,19 @@ footer{
             flex-flow: column;
             justify-content: space-evenly;
             border-bottom: 3px #f2f2f2 solid;
-            display: none;
         }
     
+        #nav{
+            display: none;
+        }
+
+        #contact{
+            p{
+                font-size: 24px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+        }
         #bottomnav{
             width: 90%;
             height: 200px;

@@ -132,7 +132,26 @@ main{
 
 // Content Front Page Start
 
+#disc{
+    margin-top: 250px;
+    width: 700px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    line-height: 35px;
+}
 
+#Order{
+    text-decoration: none;
+    margin-top: 65px;
+    border: solid 3px #f2f2f2;
+    width: 200px;
+    height: 50px;
+    p{
+        font-size: 34px;
+        text-align: center;
+        line-height: 45px;
+    }
+}
 
 #rocket{
     width: 100px;
@@ -149,7 +168,7 @@ main{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    margin-top: 1000px;
+    margin-top: 720px;
 
     .box1{
         height: 9%;
@@ -372,14 +391,17 @@ main{
     }
 
     #submit{
-        width: 150px;
-        background-color: map-get($map: $colors, $key: ltext);
+        text-decoration: none;
+        margin-top: 25px;
+        border: solid 3px #f2f2f2;
+        width: 200px;
+        height: 50px;
         align-self: center;
-        margin-top: 20px;
-        border: none;
         p{
-            font-weight: 400;
-            color: map-get($map: $colors, $key: dtext);
+            font-size: 34px;
+            text-align: center;
+            line-height: 45px;
+            margin: 0;
         }
     }
 }

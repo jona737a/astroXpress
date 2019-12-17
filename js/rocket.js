@@ -20,19 +20,37 @@ $win.on('scroll', function() {
             $rocket.css('transform', 'translate(' + -wave*(width*0.25) + 'px, 650px) rotate(' + 40*rotate + 'deg)');
         }
     }
-    
-    
-    
-})
+});
+
+
+$win.on('scroll', function() { 
+    if ($(window).scrollTop() >= $( 
+      '.testy').offset().top + $('.testy'). 
+        outerHeight() - window.innerHeight) { 
+        
+            // Her skal der aendres image
+         //   document.getElementById('myImage').src='pic_bulbon.gif'
+            document.getElementById('rocket').src = 'Assets/svg/Rocket_FrontpageReverse.svg';
+     
+    }
+}); 
+// 
+$win.on('scroll', function() { 
+    console.log("Tes", this.scrollTop)
+    if ($(window).scrollTop() == 0) {   
+        document.getElementById('rocket').src = 'Assets/svg/Rocket_Frontpage.svg'; 
+    }
+});
+
 
 var didScroll;
-var lastScrollTop = 0;
+var lastScrollTop = 8;
 var navbarHeight = $('header').outerHeight();
 var $info = $('.info');
 var $about = $('.about');
 var $header = $('header');
 
-$(window).scroll(function(event){
+$win.scroll(function(event){
     didScroll = true;
 });
 
@@ -60,7 +78,7 @@ function hasScrolled() {
             $info.removeClass('info-up');
             $header.removeClass('header-up')
             
-    }
+        }
     }
     
     lastScrollTop = st;
